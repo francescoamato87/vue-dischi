@@ -26,11 +26,13 @@
 
         <div class="genre-filter">
           Select your genre:
-  <select>
-    <option value="0">all</option>
-    <option value="1">rock</option>
-    <option value="2">pop</option>
-    <option value="3">azz</option>
+  <select v-model="actualGenre"
+  @change="filterGenre"
+  >
+    <option value="all">all</option>
+    <option value="rock">rock</option>
+    <option value="pop">pop</option>
+    <option value="jazz">jazz</option>
   </select>
 </div>
 
